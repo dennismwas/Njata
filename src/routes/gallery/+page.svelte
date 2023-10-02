@@ -18,6 +18,10 @@ const generateAlt = (str) => `image ${str}`;
 
 </script>
 
+<svelte:head>
+    <title>Gallery - Njata Country House</title>
+</svelte:head>
+
 
 <div class="grid grid-cols-1 md:grid-cols-3">
     {#each images as image}

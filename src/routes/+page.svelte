@@ -32,9 +32,15 @@ function fadeSlide(node, options) {
 
 </script>
 
+
+<svelte:head>
+    <title>Home - Njata Country House</title>
+</svelte:head>
+
 <main>
   <div class="relative">
-    <img class="w-full h-fit" src={imageBg} alt="logo image " />
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <img class="w-full h-fit" src={imageBg} />
     <div
       class="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
     >
@@ -49,6 +55,7 @@ function fadeSlide(node, options) {
 
   <div class="flex flex-col md:flex-row px-12 py-8 space-y-4">
     <iframe
+	title="Njata Map"
       class="h-96 w-full"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8176829390086!2d36.36763541411852!3d-0.0323868355510411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1829d9dfee614ccd%3A0x5e0668f7e17bb1cb!2sNjata%20Country%20House!5e0!3m2!1sen!2ske!4v1673853684658!5m2!1sen!2ske"
       loading="lazy"
@@ -91,13 +98,15 @@ function fadeSlide(node, options) {
 
     <video class="w-full h-96 p-4" poster={logo2} controls>
       <source src={njataVid} type="video/mp4" />
+	  <track kind="captions" />
     </video>
   </div>
 
   <div class="flex flex-col md:flex-row px-12 py-8 space-y-4">
     <div>
       <div transition:fadeSlide="{{duration: 1000}}" >
-        <img src={i1} alt="hotel image" />
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <img src={i1}/>
 	  </div>
     </div>
     <div class="px-4 text-lg space-y-4">
