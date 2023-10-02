@@ -34,13 +34,13 @@ function fadeSlide(node, options) {
 
 
 <svelte:head>
-    <title>Home - Njata Country House</title>
+    <title>Home • Njata Country House</title>
 </svelte:head>
 
 <main>
   <div class="relative">
     <!-- svelte-ignore a11y-missing-attribute -->
-    <img class="w-full h-fit" src={imageBg} />
+    <img class="w-full h-fit" src={imageBg} alt="njata in view" />
     <div
       class="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
     >
@@ -106,7 +106,7 @@ function fadeSlide(node, options) {
     <div>
       <div transition:fadeSlide="{{duration: 1000}}" >
         <!-- svelte-ignore a11y-missing-attribute -->
-        <img src={i1}/>
+        <img src={i1} alt="njata preview"/>
 	  </div>
     </div>
     <div class="px-4 text-lg space-y-4">

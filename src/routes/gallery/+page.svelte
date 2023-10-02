@@ -12,19 +12,19 @@ import i13 from '$lib/images/13.jpg'
 import i14 from '$lib/images/14.jpg'
 
 
-const images = ([i1, i2, i3, i14, i11, i15, i17, i6, i7, i8, i13]);
+const images = [i1, i2, i3, i14, i11, i15, i17, i6, i7, i8, i13];
 
 const generateAlt = (str) => `image ${str}`;
 
 </script>
 
 <svelte:head>
-    <title>Gallery - Njata Country House</title>
+    <title>Gallery • Njata Country House</title>
 </svelte:head>
 
 
 <div class="grid grid-cols-1 md:grid-cols-3">
-    {#each images as image}
-     <img class="px-5 py-5" alt={generateAlt(image)} src={image}>
+    {#each images as image , index}
+     <img class="px-5 py-5" alt={generateAlt(index)} src={image}>
     {/each}
 </div>
