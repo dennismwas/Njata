@@ -104,7 +104,7 @@ function fadeSlide(node, options) {
 
   <div class="flex flex-col md:flex-row px-12 py-8 space-y-4">
     <div>
-      <div transition:fadeSlide="{{duration: 1000}}" >
+      <div transition:fadeSlide|global="{{duration: 1000}}" >
         <!-- svelte-ignore a11y-missing-attribute -->
         <img src={i1} alt="njata preview"/>
 	  </div>
