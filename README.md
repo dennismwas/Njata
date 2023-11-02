@@ -1,1 +1,1 @@
-Njata Countryn House built using sveltekit
+Njata Country House built using sveltekit
